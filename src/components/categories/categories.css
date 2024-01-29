@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Высота контейнера на весь экран */
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.categories-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.categories-list button {
+  background-color: #ff5050;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.categories-list button:hover {
+  background-color: #cc0000;
+}

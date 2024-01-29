@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Высота контейнера на весь экран */
+}
+
+.expenses-table {
+  width: 80%; /* Ширина таблицы в процентах от родительского контейнера */
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.expenses-table th,
+.expenses-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Дополнительные стили, если нужны */

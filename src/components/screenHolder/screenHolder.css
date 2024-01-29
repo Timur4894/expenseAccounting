@@ -1,0 +1,40 @@
+/* screenHolder.css */
+
+.container {
+  text-align: center;
+}
+
+.glow-on-hover {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid transparent; /* Начальная прозрачная линия под ссылкой */
+  transition: all 0.3s;
+}
+
+.glow-on-hover:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Толщина линии */
+  background: #3498db; /* Цвет линии */
+  transition: transform 0.3s;
+  transform: scaleX(0); /* Начальная ширина линии */
+  transform-origin: right;
+}
+
+.glow-on-hover:hover {
+  color: #3498db; /* Изменение цвета текста при наведении */
+}
+
+.glow-on-hover:hover:before {
+  transform: scaleX(1); /* Увеличение ширины линии при наведении */
+  transform-origin: left;
+}
