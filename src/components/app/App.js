@@ -15,12 +15,13 @@ class App extends Component {
   }
 
   handleLogin = () => {
-    // Ваш логин-механизм здесь, например, вызов API для проверки учетных данных
-    // При успешной авторизации вызывайте этот метод для изменения состояния
+    
     this.setState({ isAuthenticated: true });
   };
 
   render() {
+    console.log("Authentication State:", this.state.isAuthenticated);
+    
     return (
       <div className="App">
         <main>

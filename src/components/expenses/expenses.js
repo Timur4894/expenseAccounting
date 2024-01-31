@@ -26,6 +26,8 @@ class Expenses extends Component {
     localStorage.setItem("expenses", JSON.stringify(this.state.expenses));
   }
 
+  
+
   handleInputChange = (e) => {
     const { name, value } = e.target;
     this.setState((prevState) => ({

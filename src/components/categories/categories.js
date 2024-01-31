@@ -5,7 +5,7 @@ class Categories extends Component {
   constructor(props) {
     super(props);
 
-    // Загружаем данные из локального хранилища
+    
     const savedCategories = JSON.parse(localStorage.getItem("categories")) || [];
 
     this.state = {
@@ -15,7 +15,7 @@ class Categories extends Component {
   }
 
   componentDidUpdate() {
-    // Сохраняем данные в локальное хранилище при обновлении компонента
+   
     localStorage.setItem("categories", JSON.stringify(this.state.categories));
   }
 
